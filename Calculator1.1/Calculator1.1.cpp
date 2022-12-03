@@ -1,6 +1,7 @@
 
 // Calculator1.1.cpp : Defines the class behaviors for the application.
 //Koriya was here ;)
+//Pasindu owner
 
 #include "pch.h"
 #include "framework.h"
