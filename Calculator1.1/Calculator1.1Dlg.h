@@ -32,11 +32,8 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg void OnBnClickedBabt();
 	afx_msg void OnBnClickedB0();
 	afx_msg void OnEnChangeEdit1();
-
-public:
 	afx_msg void OnBnClickedB1();
 	afx_msg void OnBnClickedB2();
 	afx_msg void OnBnClickedB3();
@@ -51,4 +48,25 @@ private:
 
 	CFont display_Font;
 	CString display_Text;
+	CButton B0;
+	CButton B1;
+	CButton B2;
+	CButton B3;
+	CButton B4;
+	CButton B5;
+	CButton B6;
+	CButton B7;
+	CButton B8;
+	CButton B9;
+	CButton B_Equal;
+	CButton B_Plus;
+	CButton B_Minus;
+	CButton B_Divide;
+	CButton B_Multiply;
+	CButton remainder;
+	CButton power;
+	CButton B_Clear;
+	
+	
+
 };

@@ -61,13 +61,22 @@ void CCalculator11Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Text(pDX, IDC_EDIT1, display_Text);
+	DDX_Control(pDX, IDC_B0, B0);
+	DDX_Control(pDX, IDC_B1, B1);
+	DDX_Control(pDX, IDC_B2, B2);
+	DDX_Control(pDX, IDC_B3, B3);
+	DDX_Control(pDX, IDC_B4, B4);
+	DDX_Control(pDX, IDC_B5, B5);
+	DDX_Control(pDX, IDC_B6, B6);
+	DDX_Control(pDX, IDC_B7, B7);
+	DDX_Control(pDX, IDC_B8, B8);
+	DDX_Control(pDX, IDC_B9, B9);
 }
 
 BEGIN_MESSAGE_MAP(CCalculator11Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_Babt, &CCalculator11Dlg::OnBnClickedBabt)
 	ON_BN_CLICKED(IDC_B0, &CCalculator11Dlg::OnBnClickedB0)
 	ON_EN_CHANGE(IDC_EDIT1, &CCalculator11Dlg::OnEnChangeEdit1)
 	ON_BN_CLICKED(IDC_B1, &CCalculator11Dlg::OnBnClickedB1)
@@ -117,6 +126,16 @@ BOOL CCalculator11Dlg::OnInitDialog()
 
 	// TODO: Add extra initialization here
 	display_Font.CreateFont(23, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
+	B0.SetFont(&display_Font);
+	B1.SetFont(&display_Font);
+	B2.SetFont(&display_Font);
+	B3.SetFont(&display_Font);
+	B4.SetFont(&display_Font);
+	B5.SetFont(&display_Font);
+	B6.SetFont(&display_Font);
+	B7.SetFont(&display_Font);
+	B8.SetFont(&display_Font);
+	B9.SetFont(&display_Font);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -174,12 +193,6 @@ void CCalculator11Dlg::addDigit(char digit)
 {
 	display_Text += digit;
 	UpdateData(false);
-}
-
-void CCalculator11Dlg::OnBnClickedBabt()
-{
-	// TODO: Add your control notification handler code here
-	AfxMessageBox(_T("20/ENG/153 Vishmitha \n20/ENG/164 Koriya"));
 }
 
 void CCalculator11Dlg::OnEnChangeEdit1()
